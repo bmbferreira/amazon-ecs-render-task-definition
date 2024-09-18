@@ -7,6 +7,9 @@ name: Package
 
 jobs:
   check:
+    # give permissions to commit and push to master
+    permissions:
+      contents: write
     name: Package distribution file
     runs-on: ubuntu-22.04
     steps:
